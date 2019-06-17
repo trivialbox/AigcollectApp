@@ -1,0 +1,49 @@
+<!-- -->
+<ion-content padding class="animated fadeIn login auth-page">
+  <div class="login-content">
+    <br>
+    <!-- Logo -->
+    <div padding-horizontal text-center class="animated fadeInDown">
+      <div class="logo"></div>
+      <h2 ion-text class="text-primary">
+      </h2>
+    </div>
+    <div align="center">
+      <img src="../../assets/logo.png" height="100" width="120"/>
+    </div>
+    <br>
+    <br>
+    <!-- Login form -->
+    <form class="list-form">
+      <ion-item>
+        <ion-label floating>
+          <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+        </ion-label>
+        <ion-input type="email" placeholder="Cedula"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>
+          <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+        </ion-label>
+        <ion-input type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+    </form>
+    <br>
+    <div align="right">
+      <a text-right ion-text color="secondary" tappable (click)="forgotPass()">Olvidate la contraseña?</a>
+    </div>
+    <br>
+    <div align="center">
+      <ion-button align="center" color="primary" routerLink="/list" (click)="login()">
+        Iniciar sesión
+      </ion-button>
+    </div>
+
+    <!-- Other links -->
+    <div text-center margin-top>
+      <span ion-text color="secondary" tappable (click)="register()">Eres nuevo? <strong>Crear cuenta</strong></span>
+    </div>
+
+  </div>
+</ion-content>
